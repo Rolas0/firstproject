@@ -1,0 +1,63 @@
+@use "sass:math";
+$containersBg: #000;
+$containersTextColor: #fff;
+@mixin theme($kintamasis: DarkGray, $manoStatusas: false) {
+    background: $kintamasis;
+    box-shadow: 0 0 1px rgba($kintamasis, .25);
+    color: #fff;
+    @if $manoStatusas {
+        border-radius: 2;
+    }
+}
+%message-shared {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+%section-list {
+    padding: 10px;
+    border: 1px solid gray;
+}
+section {
+    @extend %section-list;
+}
+section:last-child {
+    background-color: black;
+}
+.my-container1 {
+    @include theme($manoStatusas: false);
+    @extend %message-shared;
+    border-radius: 10px;
+}
+.my-container2 {
+    @include theme($kintamasis: DarkRed, $manoStatusas: true);
+}
+.my-container3 {
+    @include theme($kintamasis: DarkGreen);
+}
+nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li { display: inline-block; }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+}
+main {
+    section {
+        text-decoration: none;
+    }
+}
+a {
+    &::after {
+        border: 1px;
+    }
+    &:visited {
+        color: white;
+    }
+}

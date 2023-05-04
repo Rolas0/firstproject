@@ -1,0 +1,23 @@
+.all_cars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.img {
+  cursor: pointer;
+}
+
+
+
+class Motorcycle extends Vehicle {
+  constructor(make, model, year, numWheels, hasHelmet) {
+    this.numWheels - Number(numWheels);
+    this.hasHelmet - Boolean(hasHelmet);
+  }
+
+  ride() {
+    this.make + " " + this.model + " " + this.year + " juda miškais";
+  }
+}

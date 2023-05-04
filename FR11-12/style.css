@@ -1,0 +1,80 @@
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-image: url(https://img.freepik.com/free-photo/white-bricks-wall-texture_1203-1665.jpg);
+}
+.green_img {
+  height: 140px;
+  width: 250px;
+ padding: 0px 20px;
+}
+
+.teamwork {
+  height: 200px;
+  width: 300px;
+  float: left;
+  padding: 20px 10px 0px 0px;
+}
+
+header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: rgb(175, 207, 30);
+ height: 150px;
+ padding: 0px;
+ margin: 0px;
+ width: 50%;
+
+}
+
+.nav li, a{
+  display: inline-block;
+  font-size: 30px;
+  padding: 20px 10px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.cont {
+  display: flex;
+  width: 50%;
+  background-color: white;
+  padding-bottom: 20px;
+  height: 100%;
+  
+}
+.article_a {
+flex: 2;
+padding: 0px 10px;
+max-width: 350px;
+}
+
+.article_b {
+  flex: 3;
+  padding: 0px 10px;
+}
+
+.article_b ul{
+display: block;
+}
+
+.button_a {
+ text-align: end;
+}
+
+
+.button_b {
+  display: flex;
+  justify-content: flex-end;
+}
+button {
+height: 40px;
+color: white;
+background-color: rgb(175, 207, 30);
+border-style: none;
+border-radius: 3px;
+}
+

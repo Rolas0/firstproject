@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="todo2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Best <span class="todo">ToDo</span> App</h1>
+    <nav class="nav_bar">
+      <ul>
+        <li>
+          <a href="#">
+            <img class="fb" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt="facebook">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="twit"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
+              alt="twitter">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="linked" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <form>
+      <h2>Edit Task</h2>
+
+      <div class="label_id" >
+        <label for="id">Task ID</label>
+        <input class="inp id_task" readonly value="123456789" type="text" id="id" name="id"><br><br>
+      </div>
+
+      <div class="label_name">
+        <label for="name">Name</label>
+        <input class="inp" type="text" name="name" id="name" required><br><br>
+      </div>
+      <div class="check_box">
+        <label for="checkbox">Compleate</label>
+        <input type="checkbox" name="check" id="checkbox">
+      </div><br>
+
+      <button class="edit_btn" type="submit">Edit</button>
+
+      <p class="error">There Was An Error</p>
+    </form>
+
+    <button class="btn" >Back To Tasks</button>
+  </main>
+
+</body>
+
+</html>

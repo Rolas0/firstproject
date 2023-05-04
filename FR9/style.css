@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg);
+  background-size: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee ;
+  padding: 10px 40px;
+  width: 550px;
+  margin-top: 40px;
+  opacity: 0.9;
+
+}
+
+form input {
+border-style: none;
+background-color: #eee;
+border-bottom: 1px solid black;
+width: 100%;
+}
+
+.button {
+  width: 150px;
+  height: 40px;
+  background-color: rgb(114, 114, 243);
+  border-radius: 20px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.gender input {
+ width: 10px;
+}
+.disc {
+  background-color: #eee;
+  border-style: none;
+ border-bottom: 1px solid black;
+ resize: none;
+}

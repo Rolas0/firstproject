@@ -1,0 +1,70 @@
+body {
+  width: 80%;
+  position: relative;
+  left: 10%;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: green;
+  
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  
+}
+ul li{
+  display: inline-block;
+  font-size: 25px;
+}
+
+.desert {
+  width: 100%;
+}
+
+.sec {
+ 
+  justify-content: center;
+ background-color: rgb(223, 217, 217);
+ padding: 30px;
+}
+
+h2 {
+  font-size: 30px;
+  padding: 10px;
+  color: white ;
+  background-color: green;
+}
+
+
+.section {
+  background-color: rgb(210, 255, 200);
+  height: 350px;
+  padding: 30px;
+
+}
+
+.section h2 {
+  margin-top: 0px;
+  position: relative;
+  top: 2px;
+}
+
+.section p {
+position: relative;
+top: 25px;
+}
+

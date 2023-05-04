@@ -1,0 +1,59 @@
+.my-container1 {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+section {
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+section:last-child {
+  background-color: black;
+}
+
+.my-container1 {
+  background: DarkGray;
+  box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.my-container2 {
+  background: DarkRed;
+  box-shadow: 0 0 1px rgba(139, 0, 0, 0.25);
+  color: #fff;
+  border-radius: 2;
+}
+
+.my-container3 {
+  background: DarkGreen;
+  box-shadow: 0 0 1px rgba(0, 100, 0, 0.25);
+  color: #fff;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+main section {
+  text-decoration: none;
+}
+
+a::after {
+  border: 1px;
+}
+a:visited {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

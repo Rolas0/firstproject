@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appartments listing</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Property List</h1>
+            <h4>See all houses you want!</h4>
+        </div>
+    </header>
+    <main>
+        <!-- Add form -->
+        <section>
+            <div class="add-property hidden">
+                <div class="backdrop">
+                    <div class="form-container">
+                        <form>
+                            <h3>Add Property</h3>
+                            <div class="form-control">
+                                <label for="img">IMG</label>
+                                <input type="text" id="img">
+                            </div>
+                            <div class="form-control">
+                                <label for="price">Price</label>
+                                <input type="number" id="price">
+                            </div>
+                            <div class="form-control">
+                                <label for="description">Description</label>
+                                <textarea id="description" rows="4"></textarea>
+                            </div>
+                            <div class="form-control">
+                                <label for="city">City</label>
+                                <select id="city">
+                                    <option value="Vilnius">Vilnius</option>
+                                    <option value="Kaunas">Kaunas</option>
+                                    <option value="Klaipėda">Klaipėda</option>
+                                    <option value="Šiauliai">Šiauliai</option>
+                                    <option value="Panevėžys">Panevėžys</option>
+                                </select>
+                            </div>
+                            <input type="submit" class="btn btn-primary" value="Add property">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Filter -->
+        <section>
+            <div class="filter container">
+                <div>
+                    <h3>Filter</h3>
+                    <div class="filter-items"></div>
+                </div>
+                <button class="add-button btn btn-primary">Add Property +</button>
+            </div>
+        </section>
+        <!-- Card container -->
+        <section>
+            <div class="card-container container"></div>
+        </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+
+</html>

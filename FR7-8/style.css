@@ -1,0 +1,25 @@
+h1::first-letter {
+  color: red;
+}
+main section p:nth-child(2) {
+  color: green;
+}
+
+main section p::first-letter {
+  color: blue;
+}
+
+main section p:nth-child(odd) {
+  background-color: lightblue;
+}
+main section p:nth-child(even) {
+  background-color: lavenderblush;
+}
+
+main section:last-child a {
+  color: rgb(21, 216, 86);
+}
+
+main section:last-child a:hover {
+  background-color: brown;
+}

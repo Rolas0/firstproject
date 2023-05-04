@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <h1>Register to Fancy Form</h1>
+    <h2>All fields are <span class="recolor">required</span> unless marked as "optional"</h2>
+    <form class="form">
+
+
+      <label class="label_id _text" for="id">Your unique ID that you can't change</label>
+      <input class="input_id" id="id" type="text" value="YBX0123" readonly name="id"><br>
+
+
+      <label class="email _text" for="Email">Email:</label>
+      <input class="input_email req" placeholder="your@email" type="email" name="Email" id="Email" required><br>
+
+
+      <label class="password _text" for="password">Password:</label>
+      <input class="input_pass req" type="password" placeholder="*******" name="" id="password" required><br>
+
+
+      <label class="age _text" for="age">Age:</label>
+      <input class="myage req" min="18" max="65" placeholder="18" maxlength="65" type="number" required name="age" id="age"><br>
+
+
+      <label class="desc _text" for="Description">Tell us a little about yourself <span class="opt">(optional)</span>:</label>
+      <textarea class="tex_desc req" required name="desc" id="Description" cols="40" rows="5"></textarea><br>
+
+
+      <div class="div_terms">
+      <input class="check" required id="terms" name="checkbox" type="checkbox">
+      <label class="terms _text"  for="terms">I agree with the Terms & Conditions</label><br>
+      </div><br>
+
+
+      <button class="reg" type="submit">Register</button>
+    </form>
+
+
+  </main>
+</body>
+
+</html>
