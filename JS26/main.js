@@ -5,8 +5,8 @@ const expDiv = document.querySelector(".experience_div");
 const experiencesUrl = "https://zany-skitter-caper.glitch.me/experiences";
 const skillsUrl = "https://zany-skitter-caper.glitch.me/skills";
 
-let newExperiences = [];
-let newSkills = [];
+let experience = [];
+let skill = [];
 
 async function getResults() {
   const experienceFetch = fetch(experiencesUrl).then((response) =>
@@ -16,13 +16,13 @@ async function getResults() {
 
   const response = await Promise.all([experienceFetch, skillsFetch])
     .then(([experiences, skills]) => {
-      newExperiences = experiences;
-      newSkills = skills;
-      newExperiences.forEach((element) => {
+      experience = experiences;
+      skill = skills;
+      experience.forEach((element) => {
         addExperience(element);
       });
 
-      newSkills.forEach((element) => {
+      skill.forEach((element) => {
         personSkills(element);
       });
       console.log(experiences);
